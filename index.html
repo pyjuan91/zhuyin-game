@@ -7,17 +7,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="homepage">
-    <h1>注音符號遊戲</h1>
-    <button id="start-game">開始遊戲</button>
-  </div>
-
-  <div id="gamepage" style="display: none;">
-    <h1>遊戲進行中</h1>
-    <div id="zhuyin-pair"></div>
-    <button id="next-pair">下一題</button>
-    <div id="score">分數：0</div>
-    <div id="timer">時間：3:00</div>
+  <div id="gamepage">
+    <header>
+      <h1>注音符號遊戲</h1>
+    </header>
+    <main>
+      <div id="zhuyin-wrapper">
+        <div class="zhuyin" id="zhuyin-left"></div>
+        <div class="zhuyin" id="zhuyin-right"></div>
+      </div>
+    </main>
+    <footer>
+      <button id="next-pair">下一題</button>
+    </footer>
   </div>
 
   <script src="script.js"></script>

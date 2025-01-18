@@ -2,11 +2,58 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-#zhuyin-pair {
-  font-size: 48px;
-  margin: 20px;
+header {
+  flex: 0 0 auto;
+  padding: 20px 0;
+  background-color: #87ceeb;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+main {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 140px); /* 減去 header 和 footer 的高度 */
+}
+
+#zhuyin-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%; /* 容器寬度 */
+  max-width: 1200px; /* 最大寬度限制 */
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.zhuyin {
+  flex: 1;
+  font-size: 20vw; /* 動態字體大小 */
+  text-align: center;
+}
+
+footer {
+  flex: 0 0 auto;
+  padding: 20px 0;
+  background-color: #f8f8f8;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 button {
